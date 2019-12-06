@@ -1,0 +1,666 @@
+(function(window, utils) {
+    var categories = {
+        'POWER TOOLS': {
+            'description': 'Power Tools',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/power-tools',
+            'alt': 'power tools'
+        },
+        'HAND TOOLS': {
+            'description': 'Hand Tools',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/hand-tools',
+            'alt': 'hand tools'
+        },
+        'TOOL ACCESSORIES': {
+            'description': 'Tool Accessories',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/tool-accessories',
+            'alt': 'tool accessories'
+        },
+        'WELDING & SOLDERING IRONS': {
+            'description': 'Welding & Soldering Irons',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/welding-soldering',
+            'alt': 'welding and soldering irons'
+        },
+        'SAFETY & WORKWEAR': {
+            'description': 'Safety & Workwear',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/safety-equipment-workwear',
+            'alt': 'safety workwear'
+        },
+        'AUTOMOTIVE TOOLS': {
+            'description': 'Automotive Tools',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/automotive',
+            'alt': 'automotive tools'
+        },
+        'TOOL STORAGE': {
+            'description': 'Tool Storage',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/storage',
+            'alt': 'tool storage'
+        },
+        'PLUMBING TOOLS': {
+            'description': 'Plumbing Tools',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/plumbing',
+            'alt': 'plumbing tools'
+        },
+        'HEAVY LIFTING EQUIPMENT': {
+            'description': 'Heavy Lifting Equipment',
+            'img': '//cdn.optimizely.com/img/15721220395/19542c93bd1d432293de4104f8a51e42.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/5a49e91240824b0b8b87b9fa9ce7a322.png',
+            'url': 'https://www.bunnings.com.au/our-range/tools/heavy-lifting-equipment',
+            'alt': 'heavy lifting equipment'
+        },
+        'BUILDING & CONSTRUCTION': {
+            'description': 'Building & Construction',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/building-construction',
+            'alt': 'building & construction'
+        },
+        'DECKING': {
+            'description': 'Decking',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/decking',
+            'alt': 'decking'
+        },
+        'LANDSCAPE': {
+            'description': 'Landscape',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/landscape',
+            'alt': 'landscape'
+        },
+        'FENCING': {
+            'description': 'Fencing',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/fencing',
+            'alt': 'fencing'
+        },
+        'TIMBER': {
+            'description': 'Timber',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/timber',
+            'alt': 'timber'
+        },
+        'BUILDING BOARDS': {
+            'description': 'Building Boards',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/building-boards',
+            'alt': 'building boards'
+        },
+        'ROOFING': {
+            'description': 'Roofing',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/roofing',
+            'alt': 'roofing'
+        },
+        'CEMENT & CONCRETING': {
+            'description': 'Cement & Concreting',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/cement-concreting',
+            'alt': 'cement concreting'
+        },
+        'STEEL & ALUMINIUM SECTIONS': {
+            'description': 'Steel & Aluminium Sections',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/steel-aluminium-sections',
+            'alt': 'steel aluminium sections'
+        },
+        'DOOR, WINDOW & GATE HARDWARE': {
+            'description': 'Door, Window & Gate Hardware',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/door-window-gate-hardware',
+            'alt': 'door window gate hardware'
+        },
+        'GENERAL HARDWARE': {
+            'description': 'General Hardware',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/general-hardware',
+            'alt': 'general hardware'
+        },
+        'FIXINGS & FASTENERS': {
+            'description': 'Fixings & Fasteners',
+            'img': '//cdn.optimizely.com/img/15721220395/919d8026f3c243d68073ab8f511338c9.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/1841b0d4fd134e729732baa85479f68d.png',
+            'url': 'https://www.bunnings.com.au/our-range/building-hardware/fixings-fasteners',
+            'alt': 'fixings fasteners'
+        },
+        'PLANT POTS, PLANTERS & BASKETS': {
+            'description': 'Plant Pots, Planters & Baskets',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/pots',
+            'alt': 'plant pots planters baskets'
+        },      
+        'GARDEN DECOR & FEATURES': {
+            'description': 'Garden Decor & Features',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/garden-decor',
+            'alt': 'garden decor features'
+        },      
+        'GARDEN SUPPLIES & MAINTENANCE': {
+            'description': 'Garden Supplies & Maintenance',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/gardening',
+            'alt': 'garden supplies maintenance'
+        },      
+        'GARDEN TOOLS': {
+            'description': 'Garden Tools',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/garden-tools',
+            'alt': 'garden tools'
+        },      
+        'GARDEN & OUTDOOR STRUCTURES': {
+            'description': 'Garden & Outdoor Structures',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/outdoor-structures',
+            'alt': 'garden outdoor structures'
+        },      
+        'LANDSCAPING SUPPLIES': {
+            'description': 'Landscaping Supplies',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/landscaping',
+            'alt': 'landscaping supplies'
+        },      
+        'PEST CONTROL': {
+            'description': 'Pest Control',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/pest-control',
+            'alt': 'pest control'
+        },      
+        'PLANTS': {
+            'description': 'Plants',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/plants',
+            'alt': 'plants'
+        },      
+        'WATER SPRINKLERS & IRRIGATION SUPPLIES': {
+            'description': 'Water Sprinklers & Irrigation Supplies',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/watering-accessories',
+            'alt': 'water sprinklers irrigation supplies'
+        },      
+        'TURF, GRASS & LAWN CARE': {
+            'description': 'Turf, Grass & Lawn Care',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/lawn',
+            'alt': 'turf grass lawn care'
+        },      
+        'SEEDS & PROPAGATION': {
+            'description': 'Seeds & Propagation',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/seeds-propagation',
+            'alt': 'seeds propagation'
+        },      
+        'GARDEN CLOTHING & SAFETY GEAR': {
+            'description': 'Garden Clothing & Safety Gear',
+            'img': '//cdn.optimizely.com/img/15721220395/5f85656ebd0948e2831c5c65b67d3c45.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/83026bd1077c40aba2ac112255a0792a.png',
+            'url': 'https://www.bunnings.com.au/our-range/garden/garden-safety-equipment',
+            'alt': 'garden clothing safety gear'
+        },
+        'BBQS': {
+            'description': 'BBQs',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/barbecue',
+            'alt': 'bbqs'
+        },
+        'OUTDOOR FURNITURE': {
+            'description': 'Outdoor Furniture',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/outdoor-furniture',
+            'alt': 'outdoor furniture'
+        },
+        'OUTDOOR HEATERS': {
+            'description': 'Outdoor Heaters',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/outdoor-heating',
+            'alt': 'outdoor heaters'
+        },
+        'OUTDOOR SHADE': {
+            'description': 'Outdoor Shade',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/outdoor-shade',
+            'alt': 'outdoor shade'
+        },
+        'SWIMMING POOLS & SPAS': {
+            'description': 'Swimming Pools & Spas',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/swimming-pools-spa',
+            'alt': 'swimming pools spas'
+        },
+        'OUTDOOR PLAY EQUIPMENT': {
+            'description': 'Outdoor Play Equipment',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/outdoor-play-equipment',
+            'alt': 'outdoor play equipment'
+        },
+        'COOLERS, ICE BOXES & ESKIES': {
+            'description': 'Coolers, Ice Boxes & Eskies',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/coolers',
+            'alt': 'coolers ice boxes eskies'
+        },
+        'SUNSCREEN & INSECT REPELLENTS': {
+            'description': 'Sunscreen & Insect Repellents',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/insect-control',
+            'alt': 'sunscreen insect repellents'
+        },
+        'PICNICWARE & WATER STORAGE': {
+            'description': 'Picnicware & Water Storage',
+            'img': '//cdn.optimizely.com/img/15721220395/8948798d7d914c8dae337e44cc3cd04e.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/0d347fb20a564b5d8045ced444ec34bd.png',
+            'url': 'https://www.bunnings.com.au/our-range/outdoor-living/picnicware',
+            'alt': 'picnicware water storage'
+        },
+        'KITCHEN INSPIRATION': {
+            'description': 'Kitchen Inspiration',
+            'img': '//cdn.optimizely.com/img/15721220395/d7e8c896ba014505bcd6517edee9665f.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/ecb79c884d314e258ecc67cb852e05d4.png',
+            'url': 'https://www.bunnings.com.au/our-range/kitchen',
+            'alt': 'kitchen inspiration'
+        },
+        'CABINETS & ACCESSORIES': {
+            'description': 'Cabinets & Accessories',
+            'img': '//cdn.optimizely.com/img/15721220395/d7e8c896ba014505bcd6517edee9665f.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/ecb79c884d314e258ecc67cb852e05d4.png',
+            'url': 'https://www.bunnings.com.au/our-range/kitchen/cabinets-accessories',
+            'alt': 'cabinets accessories'
+        },
+        'BENCHTOPS': {
+            'description': 'Benchtops',
+            'img': '//cdn.optimizely.com/img/15721220395/d7e8c896ba014505bcd6517edee9665f.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/ecb79c884d314e258ecc67cb852e05d4.png',
+            'url': 'https://www.bunnings.com.au/our-range/kitchen/benchtops',
+            'alt': 'benchtops'
+        },
+        'KITCHEN TAPS & SINKS': {
+            'description': 'Kitchen Taps & Sinks',
+            'img': '//cdn.optimizely.com/img/15721220395/d7e8c896ba014505bcd6517edee9665f.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/ecb79c884d314e258ecc67cb852e05d4.png',
+            'url': 'https://www.bunnings.com.au/our-range/kitchen/kitchen-taps-sinks',
+            'alt': 'kitchen taps sinks'
+        },
+        'SPLASHBACKS': {
+            'description': 'Splashbacks',
+            'img': '//cdn.optimizely.com/img/15721220395/d7e8c896ba014505bcd6517edee9665f.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/ecb79c884d314e258ecc67cb852e05d4.png',
+            'url': 'https://www.bunnings.com.au/our-range/kitchen/splashbacks',
+            'alt': 'splashbacks'
+        },
+        'APPLIANCES': {
+            'description': 'Appliances',
+            'img': '//cdn.optimizely.com/img/15721220395/d7e8c896ba014505bcd6517edee9665f.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/ecb79c884d314e258ecc67cb852e05d4.png',
+            'url': 'https://www.bunnings.com.au/our-range/kitchen/appliances',
+            'alt': 'appliances'
+        },
+        'BATHROOM INSPIRATION': {
+            'description': 'Bathroom Inspiration',
+            'img': '//cdn.optimizely.com/img/15721220395/3b5ceaecf7644e2fb00d00eda8fdac15.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/92f0e234940a4e0995274daf72cab9f7.png',
+            'url': 'https://www.bunnings.com.au/our-range/bathroom-plumbing',
+            'alt': 'bathroom inspiration'
+        },
+        'BATHROOM': {
+            'description': 'Bathroom',
+            'img': '//cdn.optimizely.com/img/15721220395/3b5ceaecf7644e2fb00d00eda8fdac15.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/92f0e234940a4e0995274daf72cab9f7.png',
+            'url': 'https://www.bunnings.com.au/our-range/bathroom-plumbing/bathroom',
+            'alt': 'bathroom'
+        },
+        'PLUMBING': {
+            'description': 'Plumbing',
+            'img': '//cdn.optimizely.com/img/15721220395/3b5ceaecf7644e2fb00d00eda8fdac15.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/92f0e234940a4e0995274daf72cab9f7.png',
+            'url': 'https://www.bunnings.com.au/our-range/bathroom-plumbing/plumbing',
+            'alt': 'plumbing'
+        },
+        'INDOOR BLINDS': {
+            'description': 'Indoor Blinds',
+            'img': '//cdn.optimizely.com/img/15721220395/254e6edc8cde469f9f1b2fdbf2098539.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/18a12f4cbc6b4b54bd4493a7e76273e5.png',
+            'url': 'https://www.bunnings.com.au/our-range/curtains-blinds/indoor-blinds',
+            'alt': 'indoor blinds'
+        },
+        'OUTDOOR BLINDS': {
+            'description': 'Outdoor Blinds',
+            'img': '//cdn.optimizely.com/img/15721220395/254e6edc8cde469f9f1b2fdbf2098539.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/18a12f4cbc6b4b54bd4493a7e76273e5.png',
+            'url': 'https://www.bunnings.com.au/our-range/curtains-blinds/outdoor-blinds',
+            'alt': 'outdoor blinds'
+        },
+        'CURTAINS & ACCESSORIES': {
+            'description': 'Curtains & Accessories',
+            'img': '//cdn.optimizely.com/img/15721220395/254e6edc8cde469f9f1b2fdbf2098539.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/18a12f4cbc6b4b54bd4493a7e76273e5.png',
+            'url': 'https://www.bunnings.com.au/our-range/curtains-blinds/curtain-accessories',
+            'alt': 'curtains accessories'
+        },
+        'CUSTOM BLINDS': {
+            'description': 'Custom Blinds',
+            'img': '//cdn.optimizely.com/img/15721220395/254e6edc8cde469f9f1b2fdbf2098539.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/18a12f4cbc6b4b54bd4493a7e76273e5.png',
+            'url': 'https://www.bunnings.com.au/our-range/curtains-blinds/custom-made-blinds',
+            'alt': 'custom blinds'
+        },
+        'OFFICE DESKS & TABLES': {
+            'description': 'Office Desks & Tables',
+            'img': '//cdn.optimizely.com/img/15721220395/11648aad462f41e2bc8ecb815d6cd251.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/cb73b41b113e4995a21938dc23385e16.png',
+            'url': 'https://www.bunnings.com.au/our-range/office-furniture/desks-tables',
+            'alt': 'office desks tables'
+        },
+        'OFFICE CHAIRS': {
+            'description': 'Office Chairs',
+            'img': '//cdn.optimizely.com/img/15721220395/11648aad462f41e2bc8ecb815d6cd251.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/cb73b41b113e4995a21938dc23385e16.png',
+            'url': 'https://www.bunnings.com.au/our-range/office-furniture/office-chairs',
+            'alt': 'office chairs'
+        },
+        'OFFICE STORAGE': {
+            'description': 'Office Storage',
+            'img': '//cdn.optimizely.com/img/15721220395/11648aad462f41e2bc8ecb815d6cd251.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/cb73b41b113e4995a21938dc23385e16.png',
+            'url': 'https://www.bunnings.com.au/our-range/office-furniture/office-storage',
+            'alt': 'office storage'
+        },
+        'OFFICE ACCESSORIES': {
+            'description': 'Office Accessories',
+            'img': '//cdn.optimizely.com/img/15721220395/11648aad462f41e2bc8ecb815d6cd251.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/cb73b41b113e4995a21938dc23385e16.png',
+            'url': 'https://www.bunnings.com.au/our-range/office-furniture/office-accessories',
+            'alt': 'office accessories'
+        },
+        'OFFICE POWER & LIGHTING': {
+            'description': 'Office Power & Lighting',
+            'img': '//cdn.optimizely.com/img/15721220395/11648aad462f41e2bc8ecb815d6cd251.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/cb73b41b113e4995a21938dc23385e16.png',
+            'url': 'https://www.bunnings.com.au/our-range/office-furniture/office-power-and-lighting',
+            'alt': 'office power lighting'
+        },
+        'PAINT': {
+            'description': 'Paint',
+            'img': '//cdn.optimizely.com/img/15721220395/2868ccab7bac4a6d82ae59f35f8b93c1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/a59eb75ad809402c9c03455c98558e5d.png',
+            'url': 'https://www.bunnings.com.au/our-range/paint-decorating/paint',
+            'alt': 'paint'
+        },
+        'PAINT ACCESSORIES': {
+            'description': 'Paint Accessories',
+            'img': '//cdn.optimizely.com/img/15721220395/2868ccab7bac4a6d82ae59f35f8b93c1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/a59eb75ad809402c9c03455c98558e5d.png',
+            'url': 'https://www.bunnings.com.au/our-range/paint-decorating/paint-accessories',
+            'alt': 'paint accessories'
+        },
+        'FLOORING': {
+            'description': 'Flooring',
+            'img': '//cdn.optimizely.com/img/15721220395/2868ccab7bac4a6d82ae59f35f8b93c1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/a59eb75ad809402c9c03455c98558e5d.png',
+            'url': 'https://www.bunnings.com.au/our-range/paint-decorating/flooring',
+            'alt': 'flooring'
+        },
+        'WALLPAPER': {
+            'description': 'Wallpaper',
+            'img': '//cdn.optimizely.com/img/15721220395/2868ccab7bac4a6d82ae59f35f8b93c1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/a59eb75ad809402c9c03455c98558e5d.png',
+            'url': 'https://www.bunnings.com.au/our-range/paint-decorating/wallpaper',
+            'alt': 'wallpaper'
+        },
+        'CLEANING': {
+            'description': 'Cleaning',
+            'img': '//cdn.optimizely.com/img/15721220395/3927e631136b459291019670d48ef7e1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/08778dfc9fce46f2a4c6352be8bfe4c2.png',
+            'url': 'https://www.bunnings.com.au/our-range/storage-cleaning/cleaning',
+            'alt': 'cleaning'
+        },
+        'LAUNDRY': {
+            'description': 'Laundry',
+            'img': '//cdn.optimizely.com/img/15721220395/3927e631136b459291019670d48ef7e1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/08778dfc9fce46f2a4c6352be8bfe4c2.png',
+            'url': 'https://www.bunnings.com.au/our-range/storage-cleaning/laundry',
+            'alt': 'laundry'
+        },
+        'STORAGE': {
+            'description': 'Storage',
+            'img': '//cdn.optimizely.com/img/15721220395/3927e631136b459291019670d48ef7e1.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/08778dfc9fce46f2a4c6352be8bfe4c2.png',
+            'url': 'https://www.bunnings.com.au/our-range/storage-cleaning/storage',
+            'alt': 'storage'
+        },
+        'ELECTRICAL': {
+            'description': 'Electrical',
+            'img': '//cdn.optimizely.com/img/15721220395/9cf3088c320f41d1a991e2b721456987.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/93f5f73e5ab34a3abd5ced003ad923ea.png',
+            'url': 'https://www.bunnings.com.au/our-range/lighting-electrical/electrical',
+            'alt': 'electrical'
+        },
+        'LIGHTING': {
+            'description': 'Lighting',
+            'img': '//cdn.optimizely.com/img/15721220395/9cf3088c320f41d1a991e2b721456987.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/93f5f73e5ab34a3abd5ced003ad923ea.png',
+            'url': 'https://www.bunnings.com.au/our-range/lighting-electrical/lighting',
+            'alt': 'lighting'
+        },
+        'HEATERS': {
+            'description': 'Heaters',
+            'img': '//cdn.optimizely.com/img/15721220395/9cf3088c320f41d1a991e2b721456987.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/93f5f73e5ab34a3abd5ced003ad923ea.png',
+            'url': 'https://www.bunnings.com.au/our-range/lighting-electrical/heaters',
+            'alt': 'heaters'
+        },
+        'COOLING': {
+            'description': 'Cooling',
+            'img': '//cdn.optimizely.com/img/15721220395/9cf3088c320f41d1a991e2b721456987.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/93f5f73e5ab34a3abd5ced003ad923ea.png',
+            'url': 'https://www.bunnings.com.au/our-range/lighting-electrical/cooling',
+            'alt': 'cooling'
+        },
+        'SMART HOME ASSISTANTS': {
+            'description': 'Smart Home Assistants',
+            'img': '//cdn.optimizely.com/img/15721220395/1796414c2be94a94b7e6ca2421a55285.png.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/50f7387b90314d6cb12f04a28bd8db88.png',
+            'url': 'https://www.bunnings.com.au/our-range/smart-home/smart-home-assistants',
+            'alt': 'smart home assistants'
+        },
+        'SMART HOME SECURITY': {
+            'description': 'Smart Home Security',
+            'img': '//cdn.optimizely.com/img/15721220395/1796414c2be94a94b7e6ca2421a55285.png.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/50f7387b90314d6cb12f04a28bd8db88.png',
+            'url': 'https://www.bunnings.com.au/our-range/smart-home/smart-home-security',
+            'alt': 'smart home security'
+        },
+        'SMART LIGHTING & POWER': {
+            'description': 'Smart Lighting & Power',
+            'img': '//cdn.optimizely.com/img/15721220395/1796414c2be94a94b7e6ca2421a55285.png.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/50f7387b90314d6cb12f04a28bd8db88.png',
+            'url': 'https://www.bunnings.com.au/our-range/smart-home/smart-lighting-power',
+            'alt': 'smart lighting power'
+        },
+        'ROUTERS & MODEMS': {
+            'description': 'Routers & Modems',
+            'img': '//cdn.optimizely.com/img/15721220395/1796414c2be94a94b7e6ca2421a55285.png.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/50f7387b90314d6cb12f04a28bd8db88.png',
+            'url': 'https://www.bunnings.com.au/our-range/smart-home/routers-modems',
+            'alt': 'routers modems'
+        },
+        'CARPET CLEANING EQUIPMENT': {
+            'description': 'Carpet Cleaning Equipment',
+            'img': '//cdn.optimizely.com/img/15721220395/62bce3bb94a04df0b67e91135eb7e248.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/9d7c1d657f24401ab78a21c8308f8012.png',
+            'url': 'https://www.bunnings.com.au/our-range/hire-shop/carpet-cleaning-equipment',
+            'alt': 'carpet cleaning equipment '
+        },
+        'FLOOR SANDING EQUIPMENT': {
+            'description': 'Floor Sanding Equipment',
+            'img': '//cdn.optimizely.com/img/15721220395/62bce3bb94a04df0b67e91135eb7e248.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/9d7c1d657f24401ab78a21c8308f8012.png',
+            'url': 'https://www.bunnings.com.au/our-range/hire-shop/floor-sanding-equipment',
+            'alt': 'floor sanding equipment '
+        },
+        'GENERAL HIRE EQUIPMENT': {
+            'description': 'General Hire Equipment',
+            'img': '//cdn.optimizely.com/img/15721220395/62bce3bb94a04df0b67e91135eb7e248.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/9d7c1d657f24401ab78a21c8308f8012.png',
+            'url': 'https://www.bunnings.com.au/our-range/hire-shop/general-hire-equipment',
+            'alt': 'general hire equipment '
+        },
+        'TRAILER AND VEHICLE HIRE': {
+            'description': 'Trailer and Vehicle Hire',
+            'img': '//cdn.optimizely.com/img/15721220395/62bce3bb94a04df0b67e91135eb7e248.png',
+            'mobileimg' : '//cdn.optimizely.com/img/15721220395/9d7c1d657f24401ab78a21c8308f8012.png',
+            'url': 'https://www.bunnings.com.au/our-range/hire-shop/trailer-and-vehicle-hire',
+            'alt': 'trailer and vehicle hire '
+        }
+    };
+
+    function observeNav() {
+        var targetNode = document.querySelector('nav.header-navigation--lg');
+        var config = { characterData: false, attributes: true, childList: false, subtree: false };
+        var callback = function() {
+            if (document.querySelector('nav.header-navigation--lg').classList.contains('is-open')) {
+                  var categoryHistory = getCategoryHistory();
+                  if (categoryHistory === null) {
+                  		return;
+                  }
+                  var html = createDesign(categoryHistory);
+                  appendHtml(html, 'desktop');
+            }
+        };
+        
+        var observer = new MutationObserver(callback);
+        observer.observe(targetNode, config);
+    }
+
+    function getCategoryHistory() {
+        //var categoryHistory = JSON.parse(window.localStorage.getItem('optimizely.categoryhistory'));
+        //return categoryHistory;
+        var subCategoryHistory = JSON.parse(window.localStorage.getItem('optimizely.subcategoryhistory'));
+        console.log('This is sub Categories---');
+        console.log(subCategoryHistory);
+        console.log(categories['TRAILER AND VEHICLE HIRE']);
+        console.log(categories['TRAILER AND VEHICLE HIRE'].url);
+        return subCategoryHistory;
+    }
+
+    function createDesign(categoryHistory) {
+
+        var div = document.createElement('div');
+        div.className = 'product_history_wrapper';
+        div.id = 'product_history_wrapper';
+
+        var divInner = document.createElement('div');
+        divInner.className = 'product_history_banner';
+        div.appendChild(divInner);
+      
+        var continueText = document.createElement('p');
+        continueText.className = 'main_title';
+        continueText.innerText = "Continue shopping:";
+        divInner.appendChild(continueText);
+
+        var divImages = document.createElement('div');
+        divImages.className = 'img-section';
+        divInner.appendChild(divImages);
+
+        categoryHistory.slice(0, 4).forEach(function(categoryName) {
+
+            var categoryDetails = categories[categoryName];
+
+            var product = document.createElement('div');
+            product.className = 'product-img';
+            
+            var link = document.createElement('a');
+            link.href = categoryDetails.url;
+
+            var img = document.createElement('img');
+            img.src = categoryDetails.mobileimg;
+            img.alt = categoryDetails.alt;
+            link.appendChild(img);
+            
+            var paragraph = document.createElement('p');
+            paragraph.className = 'product-desc';
+            paragraph.innerHTML = '<span>' + categoryDetails.description + '</span>';
+            link.appendChild(paragraph);
+            
+            product.appendChild(link);
+            divImages.appendChild(product);
+        });
+
+        return div;
+    }
+
+    function appendHtml(html, device) {
+        if (device == 'mobile') {
+            var mobileDiv = document.querySelector('#headerMainMenu');
+            mobileDiv.parentNode.insertBefore(html, mobileDiv.nextSibling);
+        } else {
+            var desktopDiv = document.querySelector('#RefreshHeader .header-navigation-level--lg_content-title');
+            desktopDiv.parentNode.insertBefore(html, desktopDiv.nextSibling);
+        } 
+    }
+
+    function isMobile() {
+        return (Bunnings.trackingInfo.Device === 'responsive');
+    }
+
+    if (isMobile()) {
+        utils
+            .waitForElement('#RefreshCarousel')
+            .then(function(){
+                var categoryHistory = getCategoryHistory();
+                if (categoryHistory === null) {
+                		return;
+                }
+                var html = createDesign(categoryHistory);
+                appendHtml(html, 'mobile');
+            });
+    } else {
+        utils
+            .waitForElement('nav.header-navigation--lg')
+            .then(function(){
+                observeNav();
+            });
+    }
+
+  })(window, window.optimizely.get('utils'));

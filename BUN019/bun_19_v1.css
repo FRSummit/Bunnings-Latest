@@ -1,0 +1,326 @@
+#RefreshCarousel {
+		position: relative;
+}
+
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19
+.product_history_wrapper_bun19 {
+    width: 100%;
+    min-height: 150px;
+    background-color: #f5f5f5;
+}
+
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19 img {
+    height: auto;
+    width: 100%;
+}
+
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19 .product-desc_bun19 {
+    min-height: 35px;
+    background-color: #0b5257;
+    position: absolute;
+    bottom:0;
+    left:5px;
+    right:5px;
+    font-family: futura-w01-medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+    padding:4px;
+}
+
+#RefreshCarousel .product_history_wrapper_bun19 {
+    min-height: 150px;
+    background-color: inherit;
+    max-width: 550px;
+    position: absolute;
+    top: 128px;
+    z-index: 99;
+    left: 7%;
+    margin-left: 15px;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 {
+    margin: 0 auto;
+    position: relative;
+    min-height: 150px;
+}
+#RefreshCarousel .weather_section_bun19 {
+    background: #fff;
+    /*width: 362px;
+    width: 420px;*/
+    padding: 12px 26px 12px 26px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    position: absolute;
+    top: 36px;
+    left: 7.5%;
+    z-index: 999;
+    width: auto;
+}
+  
+#RefreshCarousel .weather_subtext_bun19 {
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0c5258;
+    position: relative;
+}
+  
+#RefreshCarousel .weather_forecast_text_bun19 {
+    display: inline-block;
+}
+  
+#RefreshCarousel .sunny_icon_bun19,
+#RefreshCarousel .cold_icon_bun19 {
+    padding: 0px 12px;
+    vertical-align: bottom;
+}
+  
+#RefreshCarousel .currentDay_bun19 {
+    display: inline-block;
+    padding: 0 14px;
+}
+  
+#RefreshCarousel .day_divider_bun19 {
+    display: inline-block;
+    border-left: 2px solid #BEBEBE;
+    height: 16px;
+    position: absolute;
+    top: 1px;
+}
+  
+#RefreshCarousel .nextDay_bun19 {
+    display: inline-block;
+    padding-left: 14px;
+}
+  
+#RefreshCarousel .currentDay_bun19 span,
+#RefreshCarousel .currentDay_bun19 img,
+#RefreshCarousel .nextDay_bun19 span,
+#RefreshCarousel .nextDay_bun19 img {
+    display: inline-block;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .main_title_bun19 {
+    font-size: 34px;
+    width: 100%;
+    font-family: 'Futura W01 Heavy',sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 4px;
+    margin-bottom: 14px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .cold_width_bun19 {
+    width: 85%;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .img-section_bun19 {
+    margin-bottom: 14px;
+}
+    
+.product_history_banner_bun19 .img-section_bun19:before {
+    content: " ";
+    display: table;
+}
+    
+.product_history_banner_bun19 .img-section_bun19:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19 {
+    width: 120px;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    background: #fff;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 120px;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19 a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19 img {
+    height: 80px;
+    width: 100%;
+    border-radius: 2px;
+}
+    
+#RefreshCarousel .product_history_banner_bun19 .product-img_bun19 p.product-desc_bun19 {
+    min-height: 35px;
+    padding:6px;
+    background-color: inherit;
+    position: static;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.2;
+    color: #0d5257;
+    line-height: 1.15;
+    font-weight: 600;
+}
+  
+#RefreshCarousel .save-time-text_bun19{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+  
+#RefreshCarousel .shop_button_chevron_bun19 {
+    height: 26px;
+    width: 23px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 2px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+}
+  
+#RefreshCarousel .no_padding_bun19 {
+    padding: 0 6px !important;
+}
+  
+#RefreshCarousel .mbl_img_bun19{
+    display: none;
+}
+
+#RefreshCarousel .hero-carousel_item--single-item .hero-carousel_container--lg {
+		position: relative;
+}
+
+#RefreshCarousel .hero-carousel_item--single-item .hero-carousel_container--lg,
+#RefreshCarousel .hero-carousel_container--lg {
+  	opacity: 0.3;
+}
+  
+#RefreshCarousel .back_image_bun19{
+    background-image: url(//cdn.optimizely.com/img/15721220395/ebf5726639404957867a662401e6e1f9.png) !important;
+    opacity: 1 !important;
+    background-size: cover !important;
+}
+
+@media (max-width: 559px) {
+    #RefreshCarousel .product_history_wrapper_bun19{
+        margin-left: 8px;
+        left: 0;
+        top: 80px;
+        bottom: unset;
+    }
+    
+    #RefreshCarousel .product_history_banner_bun19 {
+        margin: 0 auto;
+        position: relative;
+        min-height: 150px;
+    }
+  
+    #RefreshCarousel .weather_section_bun19 {
+        padding: 10px;
+   		  left: 2%;
+    }
+  
+    #RefreshCarousel .weather_subtext_bun19 {
+        font-size: 14px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0c5258;
+        position: relative;
+    }
+  
+    #RefreshCarousel .weather_forecast_text_bun19 {
+      	display: inline-block;
+    }
+  
+    #RefreshCarousel .sunny_icon_bun19,
+  	#RefreshCarousel .cold_icon_bun19 {
+        padding: 0px 12px;
+        vertical-align: bottom;
+    }
+  
+    #RefreshCarousel .currentDay_bun19 {
+      	display: inline-block;
+        padding: 0 14px;
+    }
+  
+    #RefreshCarousel .day_divider_bun19 {
+        display: inline-block;
+        border-left: 2px solid #BEBEBE;
+        height: 16px;
+        position: absolute;
+        top: 4px;
+    }
+  
+    #RefreshCarousel .nextDay_bun19 {
+      	display: inline-block;
+        padding-left: 14px;
+    }
+    
+    #RefreshCarousel .product_history_banner_bun19 .main_title_bun19 {
+        font-size: 24px;
+        width: 100%;	
+    }
+  
+    #RefreshCarousel .weather_section_bun19 {
+        margin-bottom: 10px;
+    }
+    
+    #RefreshCarousel .product_history_banner_bun19 .product-img_bun19 {
+        position: relative;
+        min-height: 1px;
+        float: left;
+        background: #fff;
+        margin-left: 4px;
+        margin-right: 4px;
+        height: 120px;
+        width: 31%;
+        padding: 0;
+    }
+  
+    #RefreshCarousel .save-time-text_bun19{
+        font-size: 19px;
+  	}
+  
+    #RefreshCarousel .shop_button_chevron_bun19 {
+        height: 20px;
+    }
+  
+    #RefreshCarousel .no_padding_bun19 {
+        padding: 4px 6px !important;
+    }
+  
+    #RefreshCarousel .product_history_banner_bun19 .product-img_bun19 p.product-desc_bun19{
+        padding: 12px;
+    }
+  
+    #RefreshCarousel .back_mblimage_alt {
+      	display: none;
+  	}
+  
+    #RefreshCarousel .hero-carousel_item.slick-slide.slick-current .hero-carousel_details,
+    #RefreshCarousel .hero-carousel_image_bun19 {
+        opacity: 0.4;
+    }
+
+    #RefreshCarousel .bun_image_bun19 {
+      	opacity: 1;
+  	}
+
+    #RefreshCarousel .hero-carousel_image {
+        opacity: 0.3;
+    }
+}

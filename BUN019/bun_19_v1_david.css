@@ -1,0 +1,268 @@
+.bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast {
+    background: #fff;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast .forecast-wrapper {
+    font-size: 12px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0c5258;
+    font-family: "Futura W01 Medium", Arial, sans-serif;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast .forecast-wrapper div {
+    display: inline-block;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast .forecast-wrapper img {
+      padding: 0 8px;
+      vertical-align: bottom;
+      display: inline-block;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast .forecast-wrapper .day-divider {
+    border-left: 2px solid #BEBEBE;
+    height: 16px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast .forecast-wrapper .forecast-saturday {
+    padding: 0 14px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-forecast .forecast-wrapper .forecast-sunday {
+    padding-left: 14px;
+  }
+  
+  /*----------------------------------------------------------------*/
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .main-title {
+    font-size: 30px;
+    width: 100%;
+    font-family: 'Futura W01 Heavy',sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 4px;
+    margin-bottom: 14px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  /*----------------------------------------------------------------*/
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories {
+    margin-bottom: 14px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories:before {
+    content: " ";
+    display: table;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories .weather-category  {
+    width: 31%;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    background: #fff;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 120px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories .weather-category a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories .weather-category .category-img {
+    height: 80px;
+    width: 100%;
+    border-radius: 2px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories .weather-category .category-description {
+    min-height: 35px;
+    padding: 5px;
+    background-color: inherit;
+    position: static;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+    color: #0d5257;
+    line-height: 1.15;
+    font-weight: 600;
+  }
+
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .weather-categories .weather-category .no-padding {
+    padding: 2px 0
+  }
+  
+  /*----------------------------------------------------------------*/
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .save-time-text {
+    color: #fff; 
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-left:4px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--sm .weather-slide .shop_button_chevron {
+    height: 18px;
+    width: 23px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 2px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+  }
+  
+  /*----------------------------------------------------------------*/
+  /** Desktop **/
+
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast {
+    background: #fff;
+    padding: 12px 26px 12px 26px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    display: inline-block;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast .forecast-wrapper {
+    font-size: 15px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0c5258;
+    font-family: "Futura W01 Medium", Arial, sans-serif;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast .forecast-wrapper div {
+    display: inline-block;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast .forecast-wrapper img {
+      padding: 0 8px;
+      vertical-align: bottom;
+      display: inline-block;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast .forecast-wrapper .day-divider {
+    border-left: 2px solid #BEBEBE;
+    height: 16px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast .forecast-wrapper .forecast-saturday {
+    padding: 0 14px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-forecast .forecast-wrapper .forecast-sunday {
+    padding-left: 14px;
+  }
+  
+  /*----------------------------------------------------------------*/
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .main-title {
+    font-size: 34px;
+    width: 100%;
+    font-family: 'Futura W01 Heavy',sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 4px;
+    margin-bottom: 14px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  /*----------------------------------------------------------------*/
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories {
+    margin-bottom: 14px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories:before {
+    content: " ";
+    display: table;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories .weather-category  {
+    width: 120px;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    background: #fff;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 120px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories .weather-category a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories .weather-category .category-img {
+    height: 80px;
+    width: 100%;
+    border-radius: 2px;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories .weather-category .category-description {
+    min-height: 35px;
+    padding:6px;
+    background-color: inherit;
+    position: static;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.2;
+    color: #0d5257;
+    line-height: 1.15;
+    font-weight: 600;
+  }
+
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .weather-categories .weather-category .no-padding {
+    padding: 6px 0
+  }
+  
+  /*----------------------------------------------------------------*/
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .save-time-text {
+    color: #fff; 
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .bun019 #RefreshCarousel .hero-carousel_container--lg .weather-slide .shop_button_chevron {
+    height: 26px;
+    width: 23px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 2px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+  }
+  
+  /*----------------------------------------------------------------*/

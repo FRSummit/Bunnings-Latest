@@ -1,0 +1,55 @@
+(function(window, utils) {
+    
+    function observeHeader() {
+        var targetNode = document.getElementsByClassName('header-store-information_title_text')[0];
+        var config = { characterData: false, attributes: false, childList: true, subtree: false };
+        var callback = function(mutationsList, observer) {
+            var storeName = targetNode.innerText;
+            document.getElementById('cc_banner_store').innerText = storeName;
+        };
+        
+        var observer = new MutationObserver(callback);
+        observer.observe(targetNode, config);
+    }
+  
+  	function openChangeStore() {
+        window.scrollTo(0, 0);
+        var storeSelector = document.getElementsByClassName('header_top-trigger')[0];
+        if (typeof(storeSelector) === 'undefined' || storeSelector === null || storeSelector.offsetParent === null) {
+          storeSelector = document.getElementsByClassName('header-store-locator_trigger_link')[0];
+        }
+        storeSelector.click();
+    }
+    
+    utils
+        .waitForElement('#RefreshCarousel')
+        .then(function() {
+            document.body.classList.add('op_cc_banner');
+            var store = document.getElementsByClassName('header-store-information_title_text')[0].innerText;
+            
+            var div = document.createElement('div');    
+            div.className = 'cc_banner_wrapper';
+            div.innerHTML = ' ' +
+            '  <div class="cc_banner"> ' +
+            '      <p class="main_title">Your <span class="cc_store"><a id="cc_banner_store" class="cc_banner_store" href="#">' + store + '</a></span> store has Click &amp; Collect available</p> ' +
+            '      <p class="icon_desc">This icon on product tiles indicates the item is available for Click & Collect.</p> ' +
+            '      <ol class="cc_steps"> ' +
+            '          <li class="cc_steps_one">Shop online now</li> ' +
+            '          <li class="cc_steps_two">We\'ll let you know when your order is ready</li> ' +
+            '          <li class="cc_steps_three">Collect your order at the front of the store</li> ' +
+            '      </ol> ' +
+            '      <a href="https://www.bunnings.com.au/our-range" class="shop_button">Shop the range <svg class="shop_button_chevron"><use xlink:href="#icon-chevron-guillemet"></use></svg></a> ' +
+            '  </div>';
+
+      			var carousel = document.getElementById('RefreshCarousel');
+            carousel.parentElement.insertBefore(div, carousel.parentElement.childNodes[2]);
+            
+            document.getElementById('cc_banner_store').onclick = function() {
+                openChangeStore();
+                return false;
+            };
+            
+            observeHeader();
+        });
+    
+  })(window, window.optimizely.get('utils'));

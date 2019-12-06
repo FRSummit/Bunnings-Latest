@@ -1,0 +1,407 @@
+.heading-layout, .fixed-layout, .js-workshop {
+    display: none !important;
+}
+
+.bun072 .diy_discoverability_bun72 {
+    background: #FBFBFB;
+    overflow: hidden;
+}
+
+.bun072 .diy_discoverability_bun72 .page_icon_bun72 {
+    width: 960px;
+    margin: 22px auto 20px;
+}
+
+.bun072 .diy_discoverability_bun72 .home_icon_bun72 {
+    width: 14px;
+}
+
+.bun072 .diy_discoverability_bun72 .page_icon_bun72 .icon_arrow_bun72 {
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.bun072 .diy_discoverability_bun72 .running_page_text_bun72 {
+    vertical-align: middle;
+    color: #7A7A7A;
+}
+
+.bun072 .diy_discoverability_bun72 .main_banner_section_bun72 {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bun072 .diy_discoverability_bun72 .main_banner_section_bun72 .advice_hub_72 {
+    position: absolute;
+    top: 22px;
+    left: 221px;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 {
+    width: 960px;
+    margin: 40px auto 0;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_now_text_bun72 {
+    padding: 40px 0 34px;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_now_text_bun72 span {
+    color: #DA291C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .teending_desc_bun72 {
+    
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .teending_desc_bun72 .desc_1_72,
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .teending_desc_bun72 .desc_2_72,
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .teending_desc_bun72 .desc_3_72 {
+    display: inline-block;
+    width: 32%;
+    padding: 6px 0;
+    overflow: hidden;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .teending_desc_bun72 .desc_2_72 {
+    padding: 6px 18px;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_img_sec_bun72 {
+    width: 304px;
+    height: 304px;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_img_sec_bun72 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_dtl_sec_bun72 {
+    background: #DA291C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 12px 0 12px 24px;
+    width: 280px;
+    margin: 16px 0 0;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_dtl_text_bun72 {
+    width: 70%;
+    display: inline-block;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .desc_2_72 .trending_dtl_text_bun72 {
+    padding: 11px 0 10px;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_dtl_arrow_bun72 {
+    width: 14%;
+    display: inline-block;
+    float: right;
+}
+
+.bun072 .diy_discoverability_bun72 .trending_section_bun72 .trending_dtl_arrow_bun72 .shop_button_chevron {
+    color: #fff;
+    width: 14px;
+    height: 40px;
+}
+
+/*Feature Topic*/
+.bun072 .diy_discoverability_bun72 .feature_topic_section_bun72 {
+    width: 960px;
+    margin: 40px auto 0;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_text_bun72 {
+    padding: 40px 0 34px;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_text_bun72 span {
+    color: #DA291C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_desc_bun72 {
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_desc_bun72 .feature_1_72,
+.bun072 .diy_discoverability_bun72 .feature_topic_desc_bun72 .feature_2_72,
+.bun072 .diy_discoverability_bun72 .feature_topic_desc_bun72 .feature_3_72 {
+    display: inline-block;
+    width: 32%;
+    padding: 6px 0;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_desc_bun72 .feature_2_72{
+    padding: 6px 18px;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_img_sec_bun72 {
+    width: 307px;
+    /*height: 193px;*/
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_img_sec_bun72 img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_dtl_sec_bun72 {
+    padding: 28px 34px 24px 24px;
+    background: #fff;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_dtl_text_bun72 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #DA291C;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_dtl_subtext_bun72 {
+    font-size: 14px;
+    color: #222;
+}
+
+.bun072 .diy_discoverability_bun72 .feature_topic_title {
+    height: 44px;
+    margin-bottom: 8px;
+}
+
+/*Curated Content Heading*/
+.bun072 .diy_discoverability_bun72 .curated_content_section_bun72 {
+    width: 960px;
+    margin: 110px auto 0;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_row_title_left_72 span {
+    color: #222;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Futura W01 Book';
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_text_bun72 {
+    padding: 40px 0 68px;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_img_sec_bun72 img {
+    width: 100%;
+    height: 139px;
+    border-radius: 4px;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_text_bun72 span {
+    color: #DA291C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_row_title_left_72 {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    padding: 40px 0;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_1_inner_72 {
+    display: inline-block;
+    width: 78%;
+    text-align: right;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_inner_sec_72 {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    padding: 6px 12px;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_inner_1_sec_72,
+.bun072 .diy_discoverability_bun72 .curated_content_inner_2_sec_72,
+.bun072 .diy_discoverability_bun72 .curated_content_inner_3_sec_72 {
+    display: inline-block;
+    /*width: 30%;*/
+    width: 222px;
+    text-align: center;
+    height: 310px;
+    overflow: hidden;
+    padding: 6px 0px;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_inner_2_sec_72 {
+    padding: 6px 22px;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_dtl_sec_bun72 {
+    padding: 16px 0 10px 0;
+    text-align: left;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_dtl_sec_bun72  .curated_content_title {
+    min-height: 40px;
+    padding-bottom: 6px;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_dtl_sec_bun72  .curated_content_subtitle {
+    width: 218px;
+    color: #222;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_dtl_text_bun72 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #DA291C;
+}
+
+.bun072 .diy_discoverability_bun72 .curated_content_dtl_subtext_bun72 {
+    font-size: 14px;
+}
+
+/*Explore by Space*/
+.bun072 .diy_discoverability_bun72 .explore_by_space_bun72 {
+    width: 960px;
+    margin: 40px auto 0;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_by_space_text_bun72 {
+    padding: 20px 0 4px;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_by_space_text_bun72 span {
+    color: #DA291C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_by_space_row {
+    padding: 30px 0;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_1_72,
+.bun072 .diy_discoverability_bun72 .explore_space_2_72,
+.bun072 .diy_discoverability_bun72 .explore_space_3_72,
+.bun072 .diy_discoverability_bun72 .explore_space_4_72 {
+    display: inline-block;
+    width: 23.5%;
+    padding: 6px 0;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_2_72 {
+    padding: 6px 10px;
+    padding-left: 18px;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_3_72 {
+    padding: 6px 10px;
+    padding-right: 18px;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_img_sec_bun72 img {
+    width: 100%;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_dtl_sec_bun72 {
+    background: #DA291C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 16px 0 0;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_dtl_text_bun72 {
+    width: 70%;
+    display: inline-block;
+    padding: 14px 0 12px 24px;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_arrow_bun72 {
+    width: 14%;
+    display: inline-block;
+    float: right;
+    padding: 8px 0;
+}
+
+.bun072 .diy_discoverability_bun72 .explore_space_arrow_bun72 .shop_button_chevron {
+    color: #fff;
+    width: 14px;
+    height: 30px;
+}
+
+/*Magazine Feature Content*/
+.bun072 .diy_discoverability_bun72 .magazine_feature_sec_bun72 {
+    width: 960px;
+    margin: 18px auto 0;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_text_bun72 {
+    padding: 40px 0 34px;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_text_bun72 span {
+    color: #DA291C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_desc_1_72,
+.bun072 .diy_discoverability_bun72 .magazine_feature_desc_2_72,
+.bun072 .diy_discoverability_bun72 .magazine_feature_desc_3_72 {
+    display: inline-block;
+    width: 32%;
+    padding: 6px 0;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_img_sec_bun72 {
+    width: 304px;
+    height: 304px;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_img_sec_bun72 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_desc_2_72 {
+    padding: 6px 18px;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_dtl_sec_bun72 {
+    background: #DA291C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 12px 0 12px 24px;
+    width: auto;
+    margin: 16px 0 0;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_dtl_text_bun72 {
+    width: 75%;
+    display: inline-block;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_dtl_arrow_bun72 {
+    width: 14%;
+    display: inline-block;
+    float: right;
+}
+
+.bun072 .diy_discoverability_bun72 .magazine_feature_dtl_arrow_bun72 .shop_button_chevron {
+    color: #fff;
+    width: 14px;
+    height: 40px;
+}

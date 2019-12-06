@@ -1,0 +1,90 @@
+.main {
+    z-index: 0 !important;
+}
+
+#RefreshHeader .header_navbar-link.is-populated {
+    position: relative;
+}
+
+#RefreshHeader .ready_cart_wrapper {
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 4px 32px 6px rgba(0,0,0,.8);
+    left: calc(50% - 148px);
+    width: 238px;
+    position: absolute;
+    top: 70px;
+    z-index: 99;
+}
+
+#RefreshHeader .ready_cart_wrapper:before {
+    border-width: 13px;
+    content: '';
+    border-color: transparent transparent #F5F5F5;
+    border-style: solid;
+    display: block;
+    left: calc(50% - 13px);
+    position: absolute;
+    top: -21px;
+}
+
+#RefreshHeader .ready_cart_title_section {
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    border-bottom: solid 1px #BFBFBF;
+    position: relative;
+}
+
+#RefreshHeader .ready_cart_title {
+    font-family: "Futura W01 Heavy", Arial, sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    color: #0f5257;
+    width: 161px;
+}
+
+#RefreshHeader .ready_cart_cross_icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#RefreshHeader .ready_cart_desc_section {
+    padding: 12px 15px 20px;
+}
+
+#RefreshHeader .ready_cart_desc {
+    font-size: 12px;
+    color: #222;
+}
+
+#RefreshHeader .ready_cart_btn-section {
+    margin-top: 12px;
+}
+
+#RefreshHeader .view_cart_anc {
+    box-shadow: none;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #DA291C;
+    height: 36px;
+    line-height: 16px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    border-radius: 4px;
+    color: #FFF;
+    border: 1px solid #911913;
+}
+
+#RefreshHeader .view_cart_anc:hover {
+    color: #FFF;
+}
+
+.bun_hide {
+    display: none;
+}

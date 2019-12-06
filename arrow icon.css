@@ -1,0 +1,16 @@
+
+
+
+.view-more.view-more-iconfont .view-more-chevron:after {
+    font-family: 'buni';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e609';
+    margin-left: 6px;
+}

@@ -1,0 +1,167 @@
+optly-preview.optly-is-collapsed {
+    display: none;
+}
+
+.bun051 .time_day_personalisation_b51 {
+    background: #0d5257;
+    min-height: 200px;
+    max-height: 200px;
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.bun051 .time_day_banner_b51 {
+    height: 200px;
+}
+
+.bun051 .time_day_personalisation_b51 .click_collect_icon_b51 {
+    display: inline-block;
+    /*padding: 20px 0 0 20px;*/
+    padding: 20px 0 0 0px;
+    float: left;
+    width: auto;
+}
+
+.bun051 .time_day_personalisation_b51 .text_section_b51 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    float: right;
+}
+
+.bun051 .time_day_personalisation_b51 .icon_text_section_b51{
+    width: auto;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px 0 12px 0;
+}
+
+.bun051 .time_day_personalisation_b51 .hour_left_text_b51 {
+    width: 70%;
+    margin-left: 20px;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.bun051 .time_day_personalisation_b51 .hour_left_text_b51 p {
+    font-size: 30px;
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: -0.25px;
+    margin: 0;
+}
+
+.bun051 .time_day_personalisation_b51 .sub_text_click_b51 {
+    width: auto;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    padding: 0 34px 0 20px;
+}
+
+.bun051 .time_day_personalisation_b51 .sub_text_click_b51 .free_click_section_b51 a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bun051 .time_day_personalisation_b51 .sub_text_click_b51 .order_section_b51 {
+    margin-top: 8px;
+}
+
+.bun051 .time_day_personalisation_b51 .smile_person_b51 {
+    width: 460px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.bun051 .time_day_personalisation_b51 .img_text_bun51 {
+    margin: 0;
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 44px;
+    width: 60%;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: -0.37px;
+}
+
+.bun051 .time_day_personalisation_b51 .smile_person_desktop_img {
+    width: 460px;
+}
+
+.bun051 .time_day_personalisation_b51 .smile_char_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bun051 .time_day_personalisation_b51 .smile_person_b51 .smile_person_mbl_img{
+    display: none;
+}
+
+@media (max-width: 559px) {
+    .bun051 .time_day_personalisation_b51 {
+        min-height: 180px;
+        max-height: 180px;
+        margin: 0 10px;
+    }
+  
+    .bun051 .time_day_banner_b51 {
+        height: 180px;
+    }
+  
+    .bun051 .time_day_personalisation_b51 .icon_text_section_b51{
+        width: 100%;
+        padding: 20px 0 8px 0;
+        margin-left: 20px;
+    }
+    .bun051 .time_day_personalisation_b51 .sub_text_click_b51{
+        width: 100%;
+        left: 0;
+        top: 100%;
+        padding-right: 0;
+    }
+  
+    .bun051 .time_day_personalisation_b51 .text_section_b51{
+        width: 100%;
+    }
+  
+    .bun051 .time_day_personalisation_b51 .hour_left_text_b51 {
+        width: 70%;
+        margin-left: 16px;
+        padding: 0;
+    }
+    .bun051 .time_day_personalisation_b51 .hour_left_text_b51 p {
+        font-family: "Helvetica";
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: 1.05;
+        letter-spacing: -0.37px;
+    }
+    .bun051 .time_day_personalisation_b51 .click_collect_icon_b51 {
+        padding: 0;
+    }
+  
+    .bun051 .time_day_personalisation_b51 .smile_person_b51{
+        display: none;
+    }
+    .bun051 .time_day_personalisation_b51 .sub_text_click_b51 .free_click_section_b51 {
+        width: 70%;
+    }
+}
